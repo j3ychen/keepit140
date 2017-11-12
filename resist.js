@@ -2,12 +2,14 @@ truncateTweets = function(tweets){
   for (i = 0; i < tweets.length; i++) {
     var tweet = tweets[i];
     if (tweet.innerText.length > 140) {
-      truncateTweet(tweet);
+      //truncateTweet(tweet);
+      tweet.querySelector('.stream-item').style.display = 'none';
     }
     tweet.className = tweet.className + ' truncated';
   }
 }
 
+/*
 truncateTweet = function(tweet){
   if (tweet.nodeName == 'LI') {
     tweet = tweet.querySelector('.tweet-text');
@@ -111,7 +113,7 @@ expandTweet = function(){
   }
   return false;
 }
-
+*/
 checkDomChange = function(){
   var feed = document.getElementById('stream-items-id');
   var tweets = feed.querySelectorAll('#stream-items-id p.tweet-text:not(.truncated)');

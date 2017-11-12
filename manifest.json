@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Never 280",
   "version": "1.0",
-  "description": "We must resist. We must defend the 140. This extension defies the new 280-character limit and hides all tweets that exceed the original, perfect 140.",
+  "description": "This extension defies the new 280-character limit and hides all tweets that exceed the original, perfect 140.",
   "content_scripts": [
     {
       "matches": [

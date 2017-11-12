@@ -1,14 +1,14 @@
 {
   "manifest_version": 2,
-  "name": "KeepIt140",
-  "version": "0.1",
-  "description": "Twitter has upped its limit to 280 characters. This extension lets you #KeepIt140 with the original, brutally terse experience.",
+  "name": "Never 280",
+  "version": "1.0",
+  "description": "We must resist. We must defend the 140. This extension defies the new 280-character limit and hides all tweets that exceed the original, perfect 140.",
   "content_scripts": [
     {
       "matches": [
         "https://twitter.com/*", "http://twitter.com/*"
       ],
-      "js": ["truncate.js"]
+      "js": ["resist.js"]
     }
   ],
   "icons": { 
